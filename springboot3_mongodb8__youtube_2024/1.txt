@@ -1,1 +1,50 @@
 + https://www.youtube.com/watch?v=QumOvEDMQ34
+
+https://github.com/trishagee/restaurant-service
+
+
+$ docker run -p 27017:27017 --name mongo__8_0_3 --pull missing mongo:8.0.3
+{"t":{"$date":"2024-11-22T15:59:09.978+00:00"},"s":"I",  "c":"NETWORK",  "id":23016,   "ctx":"listener","msg":"Waiting for connections","attr":{"port":27017,"ssl":"off"}}
+
+
+Exec
+mongosh    (before mongo6: mongo)
+
+
+$ test> show dbs
+admin   40.00 KiB
+config  12.00 KiB
+local   40.00 KiB
+
+
+
+4.png
+
+POST http://localhost:8080/restaurants
+Content-Type: application/json
+
+{
+  "id": "1",
+  "name": "Trisha",
+  "address": "Sevilla",
+  "capacity": 20,
+  "openingDays": [
+    "SATURDAY"
+  ]
+}
+
+
+
+http://localhost:8080/restaurants
+[{"id":"1","name":"Trisha","address":"Sevilla","capacity":20,"openingDays":["SATURDAY"]}]
+
+
+
+
+console for   mongodb://localhost:27017
+
+show dbs
+
+use test
+
+db.restaurant.find()
