@@ -1,0 +1,7 @@
+
++ https://www.youtube.com/watch?v=oF7vlaJhySE   Spring JdbcClient: A better alternative to JdbcTemplate
+
+
+create
+springboot3_spring_jdbcclient__youtube_2025\src\main\resources\db\migration\V1__init.sql
+
